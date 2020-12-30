@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Survey Form - F1 2020</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<header>
+  <div class="title">
+    <h1 id="title">F1 2020 Season Survey 
+    </h1>
+    <hr>
+    <p id="description">
+    Tell us what you thought of the 2020 F1 Season
+      </p>
+    
+  </div>
+</header>
+
+<div class="container">
+  <form id="survey-form">
+    
+    <div class="form-item-margin" id="personal">
+      <label id="name-label" class="display-block" for="name"><span class="required">*</span>Name:</label>
+      <input id="name" type="text" name="name" placeholder="Enter your Name" autofocus required>
+      <label id="email-label" class="display-block" for="email"><span class="required">*</span>Email:</label>
+      <input id="email" type="email" name="email" placeholder="Enter your Email" required>
+      <label id="number-label" class="display-block" for="number"><span class="required">*</span>Age:</label>
+      <input id="number" type="number" name="age" min="1" max="100" placeholder="Enter your Age" required>
+    </div>
+  
+  <fieldset class="form-item-margin" id="best_driver">
+    <legend>How was your Driver of the Year?</legend>
+    <div>
+      <label for="hamilton">
+        <input type="radio" id="hamilton" name="driver" value="hamilton">
+        Lewis Hamilton
+      </label>
+      <label for="bottas">
+        <input type="radio" id="bottas" name="driver" value="bottas">
+        Valterri Bottas
+      </label>
+      <label for="verstappen">
+        <input type="radio" id="verstappen" name="driver" value="verstappen">
+        Max Verstappen
+      </label>
+      <label for="albon">
+        <input type="radio" id="albon" name="driver" value="albon">
+        Alex Albon
+      </label>
+      <label for="vettel">
+        <input type="radio" id="vettel" name="driver" value="vettel">
+        Sebastian Vettel
+      </label>
+      <label for="leclerc">
+        <input type="radio" id="leclerc" name="driver" value="leclerc">
+        Charles Leclerc
+      </label>
+      <label for="norris">
+        <input type="radio" id="norris" name="driver" value="norris">
+        Lando Norris
+      </label>
+      <label for="sainz">
+        <input type="radio" id="sainz" name="driver" value="sainz">
+        Carlos Sainz
+      </label>
+      <label for="ricciardo">
+        <input type="radio" id="ricciardo" name="driver" value="ricciardo">
+        Daniel Ricciardo
+      </label>
+      <label for="ocon">
+        <input type="radio" id="ocon" name="driver" value="ocon">
+        Esteban Ocon
+      </label>
+      <label for="gasly">
+        <input type="radio" id="gasly" name="driver" value="gasly">
+        Pierre Gasly
+      </label>
+      <label for="kvyat">
+        <input type="radio" id="kvyat" name="driver" value="kvyat">
+        Daniil Kvyat
+      </label>
+      <label for="perez">
+        <input type="radio" id="perez" name="driver" value="perez">
+        Sergio Perez
+      </label>
+      <label for="stroll">
+        <input type="radio" id="stroll" name="driver" value="stroll">
+        Lance Stroll
+      </label>
+      <label for="raikkonen">
+        <input type="radio" id="raikkonen" name="driver" value="raikkonen">
+        Kimi Raikkonen
+      </label>
+      <label for="giovinazzi">
+        <input type="radio" id="giovinazzi" name="driver" value="giovinazzi">
+        Antonio Giovinazzi 
+      </label>
+      <label for="grosjean">
+        <input type="radio" id="grosjean" name="driver" value="grosjean">
+        Romain Grosjean 
+      </label>
+      <label for="magnussen">
+        <input type="radio" id="magnussen" name="driver" value="magnussen">
+        Kevin Magnussen
+      </label>
+      <label for="russell">
+        <input type="radio" id="russell" name="driver" value="russell">
+        George Russell
+      </label>
+      <label for="latifi">
+        <input type="radio" id="latifi" name="driver" value="latifi">
+        Nicholas Latifi
+      </label>
+    </div>
+    </fieldset>
+  
+  <fieldset class="form-item-margin" id="best_team">
+    <legend>How was your Team of the Year?</legend>
+    <div>
+      <label for="mercedes">
+        <input type="radio" id="mercedes" name="team" value="mercedes">
+        Mercedes
+      </label>
+      <label for="red-bull">
+        <input type="radio" id="red-bull" name="team" value="red-bull">
+        Red Bull
+      </label>
+      <label for="ferrari">
+        <input type="radio" id="ferrari" name="team" value="ferrari">
+        Ferrari
+      </label>
+      <label for="mclaren">
+        <input type="radio" id="mclaren" name="team" value="mclaren">
+        McLaren
+      </label>
+      <label for="renault">
+        <input type="radio" id="renault" name="team" value="renault">
+        Renault
+      </label>
+      <label for="alphatauri">
+        <input type="radio" id="alphatauri" name="team" value="alphatauri">
+        AlphaTauri
+      </label>
+      <label for="racingpoint">
+        <input type="radio" id="racingpoint" name="team" value="racingpoint">
+        Racing Point
+      </label>
+      <label for="alpharomeo">
+        <input type="radio" id="alpharomeo" name="team" value="alpharomeo">
+        Alfa Romeo
+      </label>
+      <label for="haas">
+        <input type="radio" id="haas" name="team" value="haas">
+        Haas
+      </label>
+      <label for="williams">
+        <input type="radio" id="williams" name="team" value="williams">
+        Williams
+      </label>
+    </div>
+    </fieldset>
+    
+   <fieldset class="form-item-margin" id="races">
+    <legend>Which 2020 Grand Prix have you seen?</legend>
+    <div>
+    
+    <label for="austrian">
+      <input type="checkbox" id="austrian" name="austrian" value="1" checked>
+      Austrian Grand Prix
+      </label>
+    <label for="steiermark">
+      <input type="checkbox" id="steiermark" name="steiermark" value="1" checked>
+      Steiermark Grand Prix
+      </label>
+     </div>
+    </fieldset>
+    
+    <div class="form-item-margin" id="dropdown">
+      <label for="dropdown">Who will be the 2021 World Champion?         </label>
+      <select name="dropdown" id="dropdown">
+      <option value="hamilton">Lewis Hamilton
+      </option>
+      <option value="verstappen">Max Verstappen
+       </option>
+  </select>
+    </div>
+    
+  <div class="form-item-margin" id="textarea">
+    <label for="comment">Any additional comments</label>
+      <textarea name="comment" form="survey-form" id="comment" rows="10" placeholder="Comments, opinions or predictions are welcome...">Comments, opinions or predictions are welcome...
+        </textarea>
+    </div>
+  
+  <input type="submit" id="submit" value="Submit">
+  </form>
+</div>
+
+<footer>
+  <p>Coded by FlamingLlama</p>
+</footer>
+<!-- partial -->
+  
+</body>
+</html>
