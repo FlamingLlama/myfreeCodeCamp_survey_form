@@ -15,10 +15,6 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-hr {
-  color: white;
-}
-
 header {
   display: flex;
   flex-direction: column;
@@ -32,12 +28,26 @@ header #title {
   letter-spacing: 0.10em;
 }
 
-.title {
+header #logo {
+  width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header #description {
+  align-self: center;
+  text-align: center;
+  color: #FCD700;
+  letter-spacing: 0.10em;
+}
+
+.title-container {
   background-color: #EA1C2D;
   border-radius: 10px;
   margin: 2em auto;
-  padding: 25px;
-  width: 70%;
+  padding: 20px;
+  width: 85%;
 }
 
 .container {
@@ -50,12 +60,6 @@ header #title {
   padding: 20px 50px 50px 50px;
   margin-bottom: 20px;
   background-color: rgba(255,255,255,0.85);
-}
-
-header #description {
-  align-self: center;
-  text-align: center;
-  color: white;
 }
 
 #survey-form {
@@ -115,6 +119,8 @@ fieldset {
   border: 1px solid #EA1C2D;
   font-size: 15px;
   text-colour: gray;
+  width: 100%;
+  font-family: inherit;
 }
 
 
@@ -126,6 +132,18 @@ fieldset {
   border: 0px;
   color: white;
   border-radius: 10px;
+}
+
+a:link {
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  color: #FCD700;
 }
 
 footer {
