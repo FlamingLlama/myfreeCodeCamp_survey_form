@@ -15,6 +15,10 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+hr {
+  color: white;
+}
+
 header {
   display: flex;
   flex-direction: column;
